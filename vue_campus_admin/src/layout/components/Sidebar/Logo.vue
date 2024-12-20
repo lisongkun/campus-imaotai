@@ -35,7 +35,7 @@ export default {
   },
   data() {
     return {
-      title: 'campus',
+      title: '冰糖',
       logo: logoImg
     }
   }

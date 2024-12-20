@@ -1,46 +1,21 @@
 <template>
   <div class="app-container home">
     <p>
-      本项目中所有内容只供学习和研究使用，不得将本项目中任何内容用于违反国家/地区/组织等的法律法规或相关规定的其他用途。
+      本项目修改自 github开源项目：campus-imaotai.
     </p>
-    <p>
-      所有直接或间接使用本项目的个人和组织，应24小时内完成学习和研究，并及时删除本项目中的所有内容。如对本项目的功能有需求，应自行开发相关功能。
-    </p>
-    <p></p>
-    <p>本项目免费，无任何盈利</p>
-    <p>项目完全开源，更新地址：https://github.com/oddfar/campus-imaotai</p>
-
-    <el-card class="box-card">
-      <p>版本情况:</p>
-      <p>campus-imaotai:{{ version }}</p>
-      <p>campus框架:{{ frameworkVersion }}</p>
-    </el-card>
+    <p>修改版作者QQ：1727182921，添加我拉您进群交流茅台预约,茅台代售/代买</p>
   </div>
 </template>
 
 <script>
-import {getVersion} from "@/api/system/index";
 
 export default {
   name: "Index",
   data() {
     return {
-      // 版本号
-      version: "",
-      frameworkVersion: "",
     };
   },
-  created() {
-    this.getVersion();
-  },
   methods: {
-    getVersion() {
-      getVersion().then((response) => {
-          this.version = response.data.version;
-          this.frameworkVersion = response.data.frameworkVersion;
-        }
-      );
-    }
   },
 };
 </script>

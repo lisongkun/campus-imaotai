@@ -6,7 +6,6 @@
       </keep-alive>
     </transition>
     <iframe-toggle />
-    <div>{{ ttt }}</div>
   </section>
 </template>
 
@@ -31,10 +30,7 @@ export default {
     },
   },
   mounted() {
-    const ttt = this.Crypto.get(
-          "Wuv7//QyvM5eAH6r6Yo3ng=="
-        );
-    watermark.load({ watermark_txt: ttt });
+    watermark.load({ watermark_txt: '冰糖i茅台' });
   },
   watch: {
     $route(route) {
